@@ -234,6 +234,10 @@ module.exports = function (grunt) {
       }
     }
   });
-  grunt.registerTask('default', ['copy:dev', 'licensechecker', 'newer:browserify:dev', 'newer:less:dev', 'connect', 'watch']);
+
+  // Licensechecker module is currently broken
+  // grunt.registerTask('default', ['copy:dev', 'licensechecker', 'newer:browserify:dev', 'newer:less:dev', 'connect', 'watch']);
+  
+  grunt.registerTask('default', ['copy:dev', 'newer:browserify:dev', 'newer:less:dev', 'connect', 'watch']);
   grunt.registerTask('release', ['browserify:dist', 'pngmin', 'copy:dist', 'less:dist', 'uglify', 'compress']);
 };
