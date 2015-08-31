@@ -1,0 +1,15 @@
+{
+  "generator-jam3": {
+    "projectName": "MatrixBuilder",
+    "projectRepository": "MatrixBuilder",
+    "projectDescription": "A verification matrix generator for technologies Jam3 use for projects",
+    "projectAuthorName": "Benson",
+    "projectAuthorEmail": "benson@jam3.com",
+    "useTexturePackager": false,
+    "isCanvasBased": false,
+    "isDOMBased": true,
+    "changeFileNaming": false,
+    "useES6": false,
+    "templateLibrary": "vue"
+  }
+}
