@@ -4,6 +4,7 @@
 # TEAM
 
   Benson - benson@jam3.com
+  Vadim - vadim@jam3.com
 
 # THANKS
 

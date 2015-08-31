@@ -4,6 +4,7 @@ Single page application to help generate device and browser matrix's for project
 
 # Developers
 Benson
+Vadim
 
 ## PROJECT DOCUMENTATION
 
