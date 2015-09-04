@@ -22,6 +22,14 @@ module.exports = function (grunt) {
         'include': ['dependencies', 'devDependencies', 'peerDependencies']
       }
     },
+    shell: {
+        options: {
+            stderr: false
+        },
+        target: {
+            command: 'node tasks/generateFeatures'
+        }
+    },
     less: {
       'dev': {
         'options': {
@@ -237,7 +245,7 @@ module.exports = function (grunt) {
 
   // Licensechecker module is currently broken
   // grunt.registerTask('default', ['copy:dev', 'licensechecker', 'newer:browserify:dev', 'newer:less:dev', 'connect', 'watch']);
-  
-  grunt.registerTask('default', ['copy:dev', 'newer:browserify:dev', 'newer:less:dev', 'connect', 'watch']);
-  grunt.registerTask('release', ['browserify:dist', 'pngmin', 'copy:dist', 'less:dist', 'uglify', 'compress']);
+
+  grunt.registerTask('default', ['shell', 'copy:dev', 'newer:browserify:dev', 'newer:less:dev', 'connect', 'watch']);
+  grunt.registerTask('release', ['shell', 'browserify:dist', 'pngmin', 'copy:dist', 'less:dist', 'uglify', 'compress']);
 };

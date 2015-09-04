@@ -11,6 +11,7 @@
   "repository": "MatrixBuilder",
   "dependencies": {
     "bigwheel": "^2.2.0",
+    "browserslist": "^1.0.0",
     "bw-analytics": "*",
     "detect-dom-ready": "^1.0.2",
     "gsap": "^1.15.0",
@@ -19,22 +20,23 @@
   },
   "devDependencies": {
     "brfs": "^1.2.0",
-    "browserify-shim": "^3.8.0",
     "browserify": "^6.3.2",
-    "less-plugin-autoprefix": "^1.4.2",
+    "browserify-shim": "^3.8.0",
     "envify": "^3.4.0",
-    "load-grunt-tasks": "^1.0.0",
     "grunt": "^0.4.5",
     "grunt-browserify": "^3.2.0",
+    "grunt-contrib-compress": "^0.13.0",
     "grunt-contrib-connect": "^0.9.0",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-less": "^1.0.1",
-    "grunt-contrib-watch": "^0.6.1",
     "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-licensechecker": "^0.1.3",
     "grunt-newer": "^0.8.0",
-    "grunt-pngmin": "^0.6.2"
+    "grunt-pngmin": "^0.6.2",
+    "grunt-shell": "^1.1.2",
+    "less-plugin-autoprefix": "^1.4.2",
+    "load-grunt-tasks": "^1.0.0"
   },
   "browserify": {
     "transform": [
