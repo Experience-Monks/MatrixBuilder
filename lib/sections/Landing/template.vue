@@ -1,11 +1,16 @@
 <div id="Landing">
   <div class="form-container">
     <div class="title">{{title}}</div>
-    <div v-el="questionType" v-on="click: onClickQuestionType" class="type-btn"></div>
-    <div class="cont">
-    <div class="form" v-class="columnize: !questions.isBasic">
-      <label v-repeat="q: questions.data"><input id="{{q.id}}" class="cb-q" type="checkbox" v-on="click: onClickFilter" v-model="q.value" />{{q.question}}</label>
-    </div>
+    <div v-on="click: clear" class="btn btn-clear">Clear</div>
+    <div v-el="questionType" v-on="click: onClickQuestionType" class="btn btn-question"></div>
+    <div class="scroll-container">
+      <div class="form" v-class="columnize: !questions.isBasic">
+        <div class="form-item" v-repeat="q: questions.data">
+          <input id="{{q.id}}" class="cb-q" type="checkbox" v-on="click: onClickFilter" v-model="q.value" />
+          <label for="{{q.id}}">{{q.question}}</label>
+          <div v-if="questions.isBasic" class="info">{{{q.info}}}</div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="matrix-container">
@@ -21,7 +26,7 @@
       <div class="section">
         <div class="title">Mobile</div>
         <div v-el="ios">
-          <div class="subheader" v-class="error : !matrix.data.mobile.ios.browser">iOS <span class="val"><span v-repeat="matrix.data.mobile.ios.os">{{$value}}</span></span>
+          <div class="subheader" v-class="error : !matrix.data.mobile.ios.browser">iOS <span class="val"><span v-repeat="matrix.data.mobile.ios.browser">{{$value}}</span></span>
             <span class="divider">/</span>Safari <span class="val"><span v-repeat="matrix.data.mobile.ios.browser">{{$value}}</span></span>
           </div>
           <div v-repeat="matrix.data.mobile.ios.devices" class="row"  v-class="error : !matrix.data.mobile.ios.browser">
@@ -29,10 +34,10 @@
           </div>
         </div>
         <div v-el="android">
-          <div class="subheader">Android <span class="val"><span v-repeat="matrix.data.mobile.android.os">{{$value}}</span></span>
+          <div class="subheader" v-class="error : !matrix.data.mobile.android.browser">Android <span class="val"><span v-repeat="matrix.data.mobile.android.os">{{$value}}</span></span>
             <span class="divider">/</span>Chrome <span class="val"><span v-repeat="matrix.data.mobile.android.browser">{{$value}}</span></span>
           </div>
-          <div v-repeat="matrix.data.mobile.android.devices" class="row">
+          <div v-repeat="matrix.data.mobile.android.devices" class="row" v-class="error : !matrix.data.mobile.android.browser">
             <div class="name">{{$key}}</div><div class="version"><span v-repeat="$value">{{$value}}</span></div>
           </div>
         </div>
