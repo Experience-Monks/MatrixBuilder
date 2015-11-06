@@ -1,6 +1,7 @@
 <div id="Landing">
   <div class="form-container">
     <div class="title">{{title}}</div>
+     <div class="description">{{{description}}}</div>
     <div v-on="click: clear" class="btn btn-clear">Clear</div>
     <div v-el="questionType" v-on="click: onClickQuestionType" class="btn btn-question"></div>
     <div class="scroll-container">
@@ -12,6 +13,7 @@
         </div>
       </div>
     </div>
+    <p class="powered">Powered by <a href="http://caniuse.com">Caniuse.com</a></p>
   </div>
   <div class="matrix-container">
     <div v-el="matrix" class="matrix">
