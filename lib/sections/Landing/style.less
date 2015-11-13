@@ -1,17 +1,32 @@
+.container{
+  margin:100px;
+  padding-bottom:100px;
+
+
+  > .title{
+    margin-bottom:22px;
+    float:left;
+  }
+  .logo{
+    float:right;
+    margin-bottom:22px;
+  }
+
+
+}
+
 #Landing {
-  width: 100%;
-  height: 100%;
-  font-family: Helvetica, Arial;
-  .error {
+
+  clear:both;
+ .error {
     color: #343434;
   }
   .btn {
-    position: absolute;    
     border: none;
     background-color: #343434;
     text-align: center;
     width: 90px;
-    color: white;
+    color:@primary-text;
     padding: 8px 12px;
     cursor: pointer;
   }
@@ -40,19 +55,20 @@
     position: relative;
     width: 60%;
     height: 100%;
-    color: #222;
-    background-color: #f7f7f7;
+    color: @black;
+    background-color:@light-grey;
     float: left;
-    box-shadow: 5px 0px 10px 5px #000;
+   
     .title {
       margin: 30px 0px 10px 0px;
-      font-size: 2em;
+      font-size: 3.111em;
       font-weight: bold;
     }
     .description {
       margin: 20px 0px 20px 0px;
       font-size: 1em;
       font-weight: normal;
+      color:@primary-text;
     }
     .powered{
       padding: 20px 0px 0px 0px;
@@ -69,10 +85,11 @@
       z-index: 1;
 
       .form-item {
-        position: relative;
-        display: block;
-        z-index: 2;
-        padding: 10px 0px 10px 3px;
+            display: inline-block;
+            z-index: 2;
+            padding: 10px 0 10px 3px;
+            width: 49%;
+            float: left;
 
         input[type=checkbox] {
           display: none;
@@ -84,7 +101,12 @@
           position: relative;
           padding-left: 25px;
           margin-right: 15px;
-          font-size: 16px;
+          font-size: 1em;
+          font-family: @sans;
+          font-variant: small-caps;
+          text-transform: lowercase;
+          font-weight: bold;
+          float:left;
         }
 
         label:before {
@@ -95,10 +117,10 @@
           margin-right: 10px;
           position: absolute;
           left: 0;
-          bottom: 1px;
-          border: 1px solid rgba(100,100,100,0.2);
+          bottom: -2px;
+          border: 4px solid rgba(0,0,0,1);
           border-radius: 3px;
-          background-color: #efefef;
+          background-color: @light-grey;
           box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .1), 0px 1px 0px 0px rgba(255, 255, 255, .9);
         }
 
@@ -112,9 +134,9 @@
 
         .info {
           margin-left: 25px;
-          margin-top: 10px;
-          font-style: italic;
-          display: none;
+          margin-top: 25px;
+          overflow: hidden;
+          width: 85%;
 
           br {
             line-height: 20px;
@@ -122,7 +144,7 @@
         }
 
         input[type=checkbox]:checked ~ .info {
-          display: block;
+         
         }
       }
     }
@@ -132,14 +154,12 @@
     height: 100%;
     box-sizing: border-box;
     padding: 10px 20px;
-    color: white;
-    background-color: #232323;
+    color: @primary-text;
+    background-color:@light-grey;
     font-weight: bold;
     float: right;
-    .title {
-      color: white;
-      font-size: 2em;
-      font-weight: bold;
+    .title {      
+      font-size: 2em;     
     }
     .section {
       position: relative;

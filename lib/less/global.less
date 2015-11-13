@@ -6,11 +6,45 @@
  * ====================================================================
  */
 
- body, html {
-  font-family: Palatino, Helvetica, georgia,serif;
-  width: 100%;
-  height: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 300;
+body {
+	color: @primary-text;
+	font-family: @serif;
+	font-size: 17px;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+}
+
+
+hr {
+	 border: 0;
+    height: 3px;
+    background-color: #dadbda;
+    color: #dadbda;
+}
+
+// Bootstrap Text Hide Technique
+.text-hide () {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+.logo{
+	float:right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: @black;
+  font-family: @sans;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
 }
