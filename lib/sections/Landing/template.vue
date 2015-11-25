@@ -7,16 +7,29 @@
     <div class="form-container">
       <h1 class="title">{{title}}</h1>
        <p class="description">{{{description}}}</p>
+       <div class="buttons">
       <button v-on="click: clear" class="btn btn-clear">Clear</button>
       <button v-el="questionType" v-on="click: onClickQuestionType" class="btn btn-question"></button>
+      </div>
       <hr>
       <div class="scroll-container">
-        <div class="form" v-class="columnize: !questions.isBasic">
-          <div class="form-item" id="{{q.id}}-item" v-repeat="q: questions.data">
-            <input id="{{q.id}}" class="cb-q" type="checkbox" v-on="click: onClickFilter" v-model="q.value" />
-            <label for="{{q.id}}">{{q.question}}</label>
-            <div v-if="questions.isBasic" class="info"   id="{{q.id}}-info">{{{q.info}}}</div>
+        <div class="form">
+          <div class="column">
+            <div class="form-item" id="{{q.id}}-item" v-repeat="q: questions.data.column0">
+              <input id="{{q.id}}" class="cb-q" type="checkbox" v-on="click: onClickFilter" v-model="q.value" />
+              <label for="{{q.id}}">{{q.question}}</label>
+              <div v-if="questions.isBasic" class="info"   id="{{q.id}}-info">{{{q.info}}}</div>
+            </div>
           </div>
+
+          <div class="column">
+            <div class="form-item" id="{{q.id}}-item" v-repeat="q: questions.data.column1">
+              <input id="{{q.id}}" class="cb-q" type="checkbox" v-on="click: onClickFilter" v-model="q.value" />
+              <label for="{{q.id}}">{{q.question}}</label>
+              <div v-if="questions.isBasic" class="info"   id="{{q.id}}-info">{{{q.info}}}</div>
+            </div>
+          </div>
+
         </div>
       </div>
       <p class="powered">Powered by <a href="http://caniuse.com">Caniuse.com</a></p>
