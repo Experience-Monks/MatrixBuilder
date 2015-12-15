@@ -4,3 +4,326 @@
  * Fonts go here, duh
  * ====================================================================
  */
+
+ @font-face {
+	font-family: 'catalog';
+		src: url('assets/fonts/catalog/catalog-regular-webfont.eot');
+		src: url('assets/fonts/catalog/catalog-regular-webfont.eot#iefix') format('embedded-opentype'),
+			url('assets/fonts/catalog/catalog-regular-webfont.woff') format('woff'),
+			url('assets/fonts/catalog/catalog-regular-webfont.ttf') format('truetype'),
+			url('assets/fonts/catalog/catalog-regular-webfont.svg#catalog') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'catalog';
+		src: url('assets/fonts/catalog/catalog-bold-webfont.eot');
+		src: url('assets/fonts/catalog/catalog-bold-webfont.eot#iefix') format('embedded-opentype'),
+			url('assets/fonts/catalog/catalog-bold-webfont.woff') format('woff'),
+			url('assets/fonts/catalog/catalog-bold-webfont.ttf') format('truetype'),
+			url('assets/fonts/catalog/catalog-bold-webfont.svg#catalog') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'catalog';
+		src: url('assets/fonts/catalog/catalog-italic-webfont.eot');
+		src: url('assets/fonts/catalog/catalog-italic-webfont.eot#iefix') format('embedded-opentype'),
+			url('assets/fonts/catalog/catalog-italic-webfont.woff') format('woff'),
+			url('assets/fonts/catalog/catalog-italic-webfont.ttf') format('truetype'),
+			url('assets/fonts/catalog/catalog-italic-webfont.svg#catalog') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+// 
+// @font-face {
+// 	font-family: 'uni';
+// 		src: url('assets/fonts/uni/uni-sans-regular-webfont.eot');
+// 		src: url('assets/fonts/uni/uni-sans-regular-webfont.eot#iefix') format('embedded-opentype'),
+// 			url('assets/fonts/uni/uni-sans-regular-webfont.woff') format('woff'),
+// 			url('assets/fonts/uni/uni-sans-regular-webfont.ttf') format('truetype'),
+// 			url('assets/fonts/uni/uni-sans-regular-webfont.svg#uni') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: 'uni';
+		src: url('assets/fonts/uni/uni-sans-semi-bold-webfont.eot');
+		src: url('assets/fonts/uni/uni-sans-semi-bold-webfont.eot#iefix') format('embedded-opentype'),
+			url('assets/fonts/uni/uni-sans-semi-bold-webfont.woff') format('woff'),
+			url('assets/fonts/uni/uni-sans-semi-bold-webfont.ttf') format('truetype'),
+			url('assets/fonts/uni/uni-sans-semi-bold-webfont.svg#uni') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'uni';
+		src: url('assets/fonts/uni/uni-sans-bold-webfont.eot');
+		src: url('assets/fonts/uni/uni-sans-bold-webfont.eot#iefix') format('embedded-opentype'),
+			url('assets/fonts/uni/uni-sans-bold-webfont.woff') format('woff'),
+			url('assets/fonts/uni/uni-sans-bold-webfont.ttf') format('truetype'),
+			url('assets/fonts/uni/uni-sans-bold-webfont.svg#uni') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+// @font-face {
+// 	font-family: 'uni';
+// 		src: url('assets/fonts/uni/uni-sans-semibolditalic-webfont.eot');
+// 		src: url('assets/fonts/uni/uni-sans-semibolditalic-webfont.eot#iefix') format('embedded-opentype'),
+// 			url('assets/fonts/uni/uni-sans-semibolditalic-webfont.woff') format('woff'),
+// 			url('assets/fonts/uni/uni-sans-semibolditalic-webfont.ttf') format('truetype'),
+// 			url('assets/fonts/uni/uni-sans-semibolditalic-webfont.svg#uni') format('svg');
+// 	font-weight: bold;
+// 	font-style: italic;
+// }
+
+@font-face {
+	font-family: 'uni';
+		src: url('assets/fonts/uni/uni-sans-bolditalic-webfont.eot');
+		src: url('assets/fonts/uni/uni-sans-bolditalic-webfont.eot#iefix') format('embedded-opentype'),
+			url('assets/fonts/uni/uni-sans-bolditalic-webfont.woff') format('woff'),
+			url('assets/fonts/uni/uni-sans-bolditalic-webfont.ttf') format('truetype'),
+			url('assets/fonts/uni/uni-sans-bolditalic-webfont.svg#uni') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('assets/fonts/icon/icomoon.eot');
+	src:url('assets/fonts/icon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/icon/icomoon.woff') format('woff'),
+		url('assets/fonts/icon/icomoon.ttf') format('truetype'),
+		url('assets/fonts/icon/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+ * Styles for Icons
+ */
+
+.icon {
+	// Hide text, but leave it in the DOM so it is accessable to screen readers, etc.
+	.text-hide;
+
+	&:before {
+		display: inline-block;
+		font-family: 'icomoon';
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-decoration: inherit;
+		text-transform: none;
+		-webkit-font-smoothing: antialiased;
+		// 'Unhide' the Icon
+		text-indent: 0;
+		font-size: 48px;
+		line-height: 1;
+		color:@black;
+		vertical-align: baseline;
+		speak: none;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+.icon-sort, .icon-angle-left, .icon-angle-right, .icon-caret-up, .icon-caret-down, .icon-web, .icon-walk, .icon-interactive-film, .icon-video, .icon-ux, .icon-twitter, .icon-twitter-final, .icon-top-arrow-final, .icon-technology, .icon-tablet, .icon-strategy, .icon-storytelling, .icon-storybook-final, .icon-social, .icon-share, .icon-search, .icon-installation, .icon-responsive, .icon-related, .icon-projects, .icon-production, .icon-process, .icon-phone, .icon-news, .icon-more, .icon-mobile, .icon-mail, .icon-info-final, .icon-ia, .icon-html5, .icon-home, .icon-facebook, .icon-facebook-final, .icon-email, .icon-discovery, .icon-desktop, .icon-data-vis, .icon-craft, .icon-contact, .icon-car, .icon-bus, .icon-blog, .icon-bike, .icon-awards, .icon-analytics, .icon-all, .icon-address, .icon-about, .icon-angle-up, .icon-angle-down, .icon-current-location, .icon-address-alt, .icon-phone-2 {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-sort:before {
+	content: "\f0dc";
+}
+.icon-angle-left:before {
+	content: "\e62c";
+}
+.icon-angle-right:before {
+	content: "\e62b";
+}
+.icon-caret-up:before {
+	content: "\f0d8";
+}
+.icon-caret-down:before {
+	content: "\f0d7";
+}
+.icon-web:before {
+	content: "\e623";
+}
+.icon-walk:before {
+	content: "\e622";
+}
+
+.icon-interactive-film:before,
+.icon-video:before {
+	content: "\e620";
+}
+.icon-ux:before {
+	content: "\e003";
+}
+.icon-twitter:before {
+	content: "\e61f";
+}
+.icon-twitter-final:before {
+	content: "\e005";
+}
+.icon-top-arrow-final:before {
+	content: "\e006";
+}
+.icon-technology:before {
+	content: "\e61b";
+}
+.icon-tablet:before {
+	content: "\e008";
+}
+.icon-strategy:before {
+	content: "\e009";
+}
+.icon-storytelling:before {
+	content: "\e61a";
+}
+.icon-storybook-final:before {
+	content: "\e00b";
+}
+.icon-social:before {
+	content: "\e00c";
+}
+.icon-share:before {
+	content: "\e00d";
+}
+.icon-search:before {
+	content: "\e618";
+}
+.icon-installation:before,
+.icon-responsive:before {
+	content: "\e600";
+}
+.icon-related:before {
+	content: "\e615";
+}
+.icon-projects:before {
+	content: "\e601";
+
+	
+}
+.icon-production:before {
+	content: "\e012";
+}
+.icon-process:before {
+	content: "\e614";
+}
+.icon-phone:before {
+	content: "\e628";
+}
+.icon-news:before {
+	content: "\e609";
+}
+.icon-more:before {
+	content: "\e621";
+}
+.icon-mobile:before {
+	content: "\e605";
+}
+.icon-mail:before {
+	content: "\e000";
+}
+.icon-info-final:before {
+	content: "\e626";
+}
+.icon-ia:before {
+	content: "\e01a";
+}
+.icon-html5:before {
+	content: "\e01b";
+}
+.icon-home:before {
+	content: "\e625";
+}
+.icon-facebook:before {
+	content: "\e61d";
+}
+.icon-facebook-final:before {
+	content: "\e01e";
+}
+.icon-email:before {
+	content: "\e01f";
+}
+.icon-discovery:before {
+	content: "\e020";
+}
+.icon-desktop:before {
+	content: "\e021";
+}
+.icon-data-vis:before {
+	content: "\e617";
+}
+.icon-craft:before {
+	content: "\e616";
+}
+.icon-contact:before {
+	content: "\e613";
+}
+.icon-car:before {
+	content: "\e025";
+}
+.icon-bus:before {
+	content: "\e026";
+}
+.icon-blog:before {
+	content: "\e027";
+}
+.icon-bike:before {
+	content: "\e60f";
+}
+.icon-awards:before {
+	content: "\e60e";
+}
+.icon-analytics:before {
+	content: "\e02a";
+}
+.icon-all:before {
+	content: "\e607";
+}
+.icon-address:before {
+	content: "\e02c";
+}
+.icon-current-location:before {
+	content: "\e02e";
+}
+.icon-about:before {
+	content: "\e604";
+}
+.icon-angle-up:before {
+	content: "\f106";
+}
+.icon-angle-down:before {
+	content: "\f107";
+}
+
+.icon-phone-2:before {
+	content: "\f095";
+}
+
+.icon-address-alt:before {
+	content: "\e02f";
+}
+
+
