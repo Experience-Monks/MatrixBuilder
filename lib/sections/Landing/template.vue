@@ -1,8 +1,8 @@
  
 <div class="container">
-  <h4 class="title">{{title}}</h4>
-  <img src="assets/jam3Logo.svg" id="logo" alt="Jam3 logo" class="logo" width="43px" height="20px"> 
-
+  <div class="header">
+     <img src="assets/jam3Logo.svg" id="logo" alt="Jam3 logo" class="logo" > 
+  </div>
   <div id="Landing">
     <div class="form-container">
       <h1 class="title">{{title}}</h1>
@@ -35,9 +35,9 @@
       <p class="powered">Powered by <a href="http://caniuse.com">Caniuse.com</a></p>
     </div>
     <div class="matrix-container">
-      <div v-el="matrix" class="matrix">
+      <div v-el="matrix" class="matrix" id="matrix">
         <div class="section">
-          <h2 class="title" id="_Desktop">_Desktop<span class="arrow"><img src="assets/arrowLight.png" width="14px" height="9px"/></span></h2>
+          <h2 class="title" id="_Desktop">_Desktop</h2>
           <div v-el="browsers" id="_Desktop-content">
             <div v-repeat="matrix.data.desktop.browsers" class="row">
               <div class="name" v-class="error : !$value">{{$key}}</div><div class="version"><span v-repeat="$value">{{$value}}</span></div>
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="section">
-          <h2 class="title" id="_Mobile">_Mobile<span class="arrow"><img src="assets/arrowLight.png" width="14px" height="9px"/></span></h2>
+          <h2 class="title" id="_Mobile">_Mobile</h2>
           <div v-el="ios" id="_Mobile-content">
             <div class="subheader" v-class="error : !matrix.data.mobile.ios.browser">iOS <span class="val"><span v-repeat="matrix.data.mobile.ios.browser">{{$value}}</span></span>
               <span class="divider">/</span>Safari <span class="val"><span v-repeat="matrix.data.mobile.ios.browser">{{$value}}</span></span>
