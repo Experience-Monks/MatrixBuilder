@@ -32,7 +32,7 @@
 
         </div>
       </div>
-      <p class="powered">Powered by <a href="http://caniuse.com">Caniuse.com</a></p>
+      <p class="powered">Powered by <a href="http://caniuse.com"  target="_blank" >Caniuse.com</a></p>
     </div>
     <div class="matrix-container">
       <div v-el="matrix" class="matrix" id="matrix">
