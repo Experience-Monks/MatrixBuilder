@@ -20,11 +20,22 @@
        width: 80px; 
     }
   }
-
+  .phone &{
+    margin: 50px;
+  }
+  .tablet &{
+    margin: 50px;
+  }
 }
 
 #Landing {
 
+  .phone &{
+    display: block;
+  }
+  .tablet &{
+    display: block;
+  }
 
 
   display: flex;
@@ -186,6 +197,14 @@
         }
       }
     }
+    .phone &{
+      width: 100%;
+      display:inline-table;
+    }
+    .tablet &{
+      width: 100%;
+      display:inline-table;
+    }
   }
   .matrix-container {
     width: 40%;
@@ -254,6 +273,15 @@
           content: '';
         }
       }
+    }
+
+    .phone &{
+      width: 100%;
+      display:block;
+    }
+    .tablet &{
+      width: 100%;
+      display:block;
     }
   }
 }
