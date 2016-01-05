@@ -178,6 +178,10 @@
             text-transform: lowercase;
             font-weight: bold;
             float:left;
+            .phone &{
+              font-size: 1em;
+              line-height: 0.7em;
+            }
           }
 
           label:before {
@@ -208,7 +212,9 @@
             overflow: hidden;
             width: 85%;
             font-size: 0.824em;
-
+            .phone &{
+              display:none;
+            }
             br {
               line-height: 20px;
             }
