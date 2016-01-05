@@ -21,10 +21,10 @@
     }
   }
   .phone &{
-    margin: 50px;
+    margin: 20px;
   }
   .tablet &{
-    margin: 50px;
+    margin: 20px;
   }
 }
 
@@ -103,12 +103,28 @@
       margin: 30px 0px 10px 0px;
       font-size: 3.111em;
       font-weight: bold;
+      
+      .phone &{
+        font-size: 2em;
+        text-align: center;
+      }
+      .tablet &{
+        font-size: 2em;
+        text-align: center;
+      }
+
     }
     .description {
       margin: 20px 0px 20px 0px;
       font-size: 1em;
       font-weight: normal;
       color:@primary-text;
+      .phone &{
+        font-size: 0.9em;
+      }
+      .tablet &{
+        font-size: 0.9em;
+      }
     }
     .powered{
       padding: 50px 0px 0px 0px;
@@ -119,6 +135,13 @@
     .scroll-container {
       height: 65%;
       overflow-y: auto;
+
+      .phone &{
+        height: auto;
+      }
+      .tablet &{
+        height: auto;
+      }
     }
     .form {
       position: relative;
@@ -239,7 +262,16 @@
     .section {
       position: relative;
       width: 320px;
-     margin:0 auto;
+      margin:0 auto;
+
+      .phone &{
+        width: 80%;
+        margin: 50px auto;
+      }
+      .tablet &{
+        width: 80%;
+        margin: 50px auto;
+      }
     }
     .subheader {
       margin-top: 4%;
