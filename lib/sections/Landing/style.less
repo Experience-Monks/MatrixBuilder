@@ -20,11 +20,22 @@
        width: 80px; 
     }
   }
-
+  .phone &{
+    margin: 20px;
+  }
+  .tablet &{
+    margin: 20px;
+  }
 }
 
 #Landing {
 
+  .phone &{
+    display: block;
+  }
+  .tablet &{
+    display: block;
+  }
 
 
   display: flex;
@@ -39,7 +50,7 @@
       }
 
  .error {
-    color: #343434;
+    color: #CCCCCC;
   }
   .buttons{
    margin: 20px 0px;
@@ -92,12 +103,28 @@
       margin: 30px 0px 10px 0px;
       font-size: 3.111em;
       font-weight: bold;
+      
+      .phone &{
+        font-size: 2em;
+        text-align: center;
+      }
+      .tablet &{
+        font-size: 2em;
+        text-align: center;
+      }
+
     }
     .description {
       margin: 20px 0px 20px 0px;
       font-size: 1em;
       font-weight: normal;
       color:@primary-text;
+      .phone &{
+        font-size: 0.9em;
+      }
+      .tablet &{
+        font-size: 0.9em;
+      }
     }
     .powered{
       padding: 50px 0px 0px 0px;
@@ -108,6 +135,13 @@
     .scroll-container {
       height: 65%;
       overflow-y: auto;
+
+      .phone &{
+        height: auto;
+      }
+      .tablet &{
+        height: auto;
+      }
     }
     .form {
       position: relative;
@@ -144,6 +178,10 @@
             text-transform: lowercase;
             font-weight: bold;
             float:left;
+            .phone &{
+              font-size: 1em;
+              line-height: 0.7em;
+            }
           }
 
           label:before {
@@ -174,7 +212,9 @@
             overflow: hidden;
             width: 85%;
             font-size: 0.824em;
-
+            .phone &{
+              display:none;
+            }
             br {
               line-height: 20px;
             }
@@ -185,6 +225,14 @@
           }
         }
       }
+    }
+    .phone &{
+      width: 100%;
+      display:inline-table;
+    }
+    .tablet &{
+      width: 100%;
+      display:inline-table;
     }
   }
   .matrix-container {
@@ -220,7 +268,16 @@
     .section {
       position: relative;
       width: 320px;
-     margin:0 auto;
+      margin:0 auto;
+
+      .phone &{
+        width: 80%;
+        margin: 50px auto;
+      }
+      .tablet &{
+        width: 80%;
+        margin: 50px auto;
+      }
     }
     .subheader {
       margin-top: 4%;
@@ -254,6 +311,15 @@
           content: '';
         }
       }
+    }
+
+    .phone &{
+      width: 100%;
+      display:block;
+    }
+    .tablet &{
+      width: 100%;
+      display:block;
     }
   }
 }

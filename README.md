@@ -5,7 +5,7 @@ Single page application to quickly check if that cool feature you want to use is
 ## GIT
 
 ```
-git checkout https://github.com/Jam3/MatrixBuilder
+git clone https://github.com/Jam3/MatrixBuilder
 ```
 
 ## Setup

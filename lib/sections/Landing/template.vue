@@ -32,7 +32,7 @@
 
         </div>
       </div>
-      <p class="powered">Powered by <a href="http://caniuse.com"  target="_blank" >Caniuse.com</a></p>
+      <p v-if="!isMobile" class="powered">Powered by <a href="http://caniuse.com"  target="_blank" >Caniuse.com</a></p>
     </div>
     <div class="matrix-container">
       <div v-el="matrix" class="matrix" id="matrix">
@@ -70,5 +70,6 @@
         </div>
       </div>
     </div>
+    <p v-if="isMobile" class="powered">Powered by <a href="http://caniuse.com"  target="_blank" >Caniuse.com</a></p>
   </div>
 </div>
