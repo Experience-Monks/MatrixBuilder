@@ -255,6 +255,14 @@
         position:fixed;
      //   right:268px;
         top:10px;
+
+        .section{
+          position:fixed;
+
+          &.mobile {
+            top: 350px;
+          }
+        }
       }
 
     }
@@ -269,6 +277,7 @@
       position: relative;
       width: 320px;
       margin:0 auto;
+      overflow-y: scroll;
 
       .phone &{
         width: 80%;
@@ -277,6 +286,12 @@
       .tablet &{
         width: 80%;
         margin: 50px auto;
+      }
+      &.mobile{
+        height: 350px;
+      }
+      &.desktop{
+        height: 285px;
       }
     }
     .subheader {

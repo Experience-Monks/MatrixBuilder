@@ -36,7 +36,7 @@
     </div>
     <div class="matrix-container">
       <div v-el="matrix" class="matrix" id="matrix">
-        <div class="section">
+        <div class="section desktop">
           <h2 class="title" id="_Desktop">_Desktop</h2>
           <div v-el="browsers" id="_Desktop-content">
             <div v-repeat="matrix.data.desktop.browsers" class="row">
@@ -45,7 +45,7 @@
             </div>
           </div>
         </div>
-        <div class="section">
+        <div class="section mobile">
           <h2 class="title" id="_Mobile">_Mobile</h2>
           <div v-el="ios" id="_Mobile-content">
             <div class="subheader" v-class="error : !matrix.data.mobile.ios.browser">iOS <span class="val"><span v-repeat="matrix.data.mobile.ios.browser">{{$value}}</span></span>
